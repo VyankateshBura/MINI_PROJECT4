@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Card.css";
-import { CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+// import { CircularProgressbar } from "react-circular-progressbar";
+// import "react-circular-progressbar/dist/styles.css";
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { UilTimes } from "@iconscout/react-unicons";
 import Chart from "react-apexcharts";
@@ -35,10 +35,10 @@ function CompactCard({ param, setExpanded }) {
       onClick={setExpanded}
     >
       <div className="radialBar">
-        <CircularProgressbar
+        {/* <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
-        />
+        /> */}
         <span>{param.title}</span>
       </div>
       <div className="detail">
